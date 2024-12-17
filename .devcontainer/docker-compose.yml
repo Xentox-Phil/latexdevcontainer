@@ -1,6 +1,7 @@
 services:
   latex-editor:
-    image: texlive/texlive:latest
+    build:
+      context: .
     volumes:
       - ../:/workspace
       # SSH directory
