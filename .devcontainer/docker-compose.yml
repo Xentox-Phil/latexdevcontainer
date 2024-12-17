@@ -1,0 +1,10 @@
+services:
+  latex-editor:
+    image: texlive/texlive:latest
+    volumes:
+      - ../:/workspace
+      # SSH directory
+      - ~/.ssh:/root/.ssh
+      # Git config
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
